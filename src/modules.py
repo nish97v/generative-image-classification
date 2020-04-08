@@ -2,8 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-def PlotROC(prob_face, prob_nonface, num_of_images, no_roc):
-	no_roc = 100
+def PlotROC(prob_face, prob_nonface, num_of_images, no_roc=100):
 	term1 = prob_face - prob_nonface
 	print('Term1 shape: ', term1.shape)
 
